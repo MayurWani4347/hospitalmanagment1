@@ -1,0 +1,109 @@
+.auth-container {
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.auth-container h2 {
+  text-align: center;
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #007bff;
+}
+
+.error {
+  font-size: 0.85rem;
+  color: #d9534f;
+  margin-top: 4px;
+}
+
+.captcha-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.captcha-display {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: #e9ecef;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.captcha-display span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 4px;
+  color: #495057;
+}
+
+.refresh-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: #007bff;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background: #28a745;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+}
+
+button[type="submit"]:hover:not(:disabled) {
+  background: #218838;
+}
+
+@media (max-width: 480px) {
+  .auth-container {
+    padding: 16px;
+  }
+  input, button[type="submit"] {
+    font-size: 0.95rem;
+  }
+  .captcha-display span {
+    font-size: 1rem;
+  }
+}

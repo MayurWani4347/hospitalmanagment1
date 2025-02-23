@@ -1,0 +1,113 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    background-color: #343a40;
+    color: #fff;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 18px;
+    list-style: none;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #28a745;
+  }
+  
+  /* Main Content */
+  .main-content {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .hospital-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .hospital-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+  }
+  
+  .hospital-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+  }
+  
+  .hospital-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+  }
+  
+  .hospital-card p {
+    margin: 6px 0;
+    color: #555;
+  }
+  
+  .btn {
+    margin-top: 10px;
+    padding: 10px 16px;
+    background-color: #28a745;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+  }
+  
+  /* Footer */
+  .footer {
+    margin-top: 50px;
+    padding: 16px;
+    text-align: center;
+    background-color: #f8f9fa;
+    color: #555;
+    font-size: 0.95rem;
+  }
+  
+  @media (max-width: 600px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .nav-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }

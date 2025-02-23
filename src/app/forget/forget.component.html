@@ -1,0 +1,9 @@
+<div class="auth-container">
+    <h2 class="title">Forgot Password</h2>
+    <form [formGroup]="form" (ngSubmit)="submit()" class="auth-form">
+      <input formControlName="email" placeholder="Enter your email" class="input" required />
+      <button type="submit" class="btn" [disabled]="form.invalid">Send Reset Link</button>
+      <p class="switch"><a routerLink="/login">Back to Login</a></p>
+    </form>
+  </div>
+  

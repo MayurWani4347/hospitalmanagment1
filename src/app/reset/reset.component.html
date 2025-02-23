@@ -1,0 +1,8 @@
+<div class="auth-container">
+  <h2 class="title">Reset Password</h2>
+  <form [formGroup]="form" (ngSubmit)="reset()" class="auth-form">
+    <input formControlName="token" placeholder="Reset Token" type="text" class="input" required />
+    <input formControlName="newPassword" placeholder="New Password" type="password" class="input" required />
+    <button type="submit" class="btn">Reset Password</button>
+  </form>
+</div>

@@ -1,0 +1,25 @@
+
+<nav class="navbar">
+  <div class="logo">HospitalCare</div>
+  <ul class="nav-links">
+    <li><a routerLink="/user">Home</a></li>
+    <li><a routerLink="/profile">Profile</a></li>
+    <li><a routerLink="/logout">Logout</a></li>
+  </ul>
+</nav>
+
+<div class="main-content">
+  <h2 class="title">Available Hospitals</h2>
+  <div class="hospital-list">
+    <div class="hospital-card" *ngFor="let hospital of hospitals">
+      <h3>{{ hospital.name }}</h3>
+      <p><strong>Location:</strong> {{ hospital.location }}</p>
+      <p><strong>Contact:</strong> {{ hospital.contact }}</p>
+      <button class="btn" (click)="selectHospital(hospital)">Create Prescription</button>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <p>© 2025 HospitalCare. All Rights Reserved.</p>
+</footer>

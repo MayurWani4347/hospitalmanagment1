@@ -3,7 +3,11 @@
     <form [formGroup]="form" (ngSubmit)="submit()" class="auth-form">
       <input formControlName="email" placeholder="Enter your email" class="input" required />
       <button type="submit" class="btn" [disabled]="form.invalid">Send Reset Link</button>
+      <!-- <button  class="btn" ><a routerLink="/reset-password"></a>Reset Page</button> -->
+
+      <p class="switch"><a routerLink="/reset-password">Reset Page</a></p>
       <p class="switch"><a routerLink="/login">Back to Login</a></p>
+
     </form>
   </div>
   
